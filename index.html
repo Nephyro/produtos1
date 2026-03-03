@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Produtos</title>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen gap-4">
+    <div class="bg-blue-300 flex flex-col items-center w-150 gap-4 rounded-xl">
+    <h1 class="text-2xl">Lista de produtos</h1>
+    <!-- <input 
+        type="text"
+        placeholder="Código do produto"
+        class="border rounded px-8 py-2 placeholder-gray-400"
+        id="codigoProduto"
+    > -->
+    <input 
+        type="text"
+        placeholder="Produto"
+        class="border rounded px-8 py-2 placeholder-gray-400 bg-gray-100"
+        id="produtoNome"
+    >
+    <input 
+        type="text"
+        placeholder="Quantidade de produto"
+        class="border rounded px-8 py-2 placeholder-gray-400 bg-gray-100"
+        id="quantidadeProduto"
+    >
+    <button 
+        class="bg-blue-400 text-white px-4 py-2 rounded"
+        onclick="adicionarProduto()"
+    >
+        Adicionar
+    </button>
+    <table 
+        id="lista"
+        class="flex flex-col gap-2 overflow-auto h-50 w-full py-5 table-auto"
+    >
+        <thead>
+            <tr class="flex space-x-7 items-center justify-center">
+                <th id="cd" class="flex flex-col gap-2">Código</th>
+                <th id="pt" class="flex flex-col gap-2">Produto</th>
+                <th id="quant" class="flex flex-col gap-2">Quantidade</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>
