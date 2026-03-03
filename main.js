@@ -8,7 +8,7 @@ function adicionarProduto() {
 
     const span1 = document.createElement('span1')
     span1.textContent = numeroProduto
-    span1.className = 'bg-blue-100 px-8 px-2'
+    span1.className = 'bg-blue-100 px-8 px-2 rounded-sm'
 
     lista1.appendChild(span1)
 
@@ -19,7 +19,7 @@ function adicionarProduto() {
 
     const span2 = document.createElement('span2')
     span2.textContent = produtoNome.value
-    span2.className = 'bg-blue-100 px-8 px-2'
+    span2.className = 'bg-blue-100 px-8 px-2 rounded-sm'
 
     lista2.appendChild(span2)
 
@@ -30,7 +30,7 @@ function adicionarProduto() {
 
     const span3 = document.createElement('span3')
     span3.textContent = quantidadeProduto.value
-    span3.className = 'bg-blue-100 px-8 px-2'
+    span3.className = 'bg-blue-100 px-8 px-2 rounded-sm'
 
     lista3.appendChild(span3)
 }
